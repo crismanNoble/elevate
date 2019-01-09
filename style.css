@@ -78,6 +78,7 @@ p {
   appearance: none;
   padding: 7px 10px;
   color: #ffdd00;
+  color: white;
 }
 
 .input-group input:focus {
@@ -109,12 +110,12 @@ p {
   padding-right: 60px;
 }
 
-.bottom-left-content{
+.bottom-left-content {
   float: left;
   color: white;
-  width: calc(100% - 500px);
+  width: calc(50% - 20px);
 }
-.bottom-left-content {
+.bottom-left-content p{
   line-height: 1.5;
   max-width: 32em;
 }
@@ -175,6 +176,9 @@ p {
   text-transform: uppercase;
   margin-right: 20px;
 }
+.thankyou {
+  color: white;
+}
 
 .middle {
   background-color: #ffdd00;
@@ -189,6 +193,8 @@ p {
   text-align: center;
   display: none;
   opacity: 0;
+  padding-left: 20px;
+  padding-right: 20px;
   //transition: opacity .2s linear;
 }
 .captions p.active {
@@ -329,6 +335,12 @@ p {
 }
 
 @media(max-width: 800px) {
+  .bottom-left-content {
+    display: block;
+    float: none;
+    width: 100%;
+    margin-bottom: 40px;
+  }
   .form--bg-image, .bottom h3 {
     display: block;
     float: none;
@@ -421,7 +433,7 @@ p {
   }
 }
 @media (max-width: 550px) {
-  .bottom, .footer {
+  .bottom, .footer, .credit {
     padding-left: 20px;
     padding-right: 20px;
   }

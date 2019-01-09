@@ -52,4 +52,16 @@ $(document).ready(function(){
     }
   });
 
+  $('#send').click(function(){
+    var $form = $(this).parent();
+    var data = {
+      message: $('#message').val(),
+      name: $('#name').val(),
+      email: $('#email').val()
+    }
+    console.log(data);
+    var thankyou = $form.data('thankyou');
+    $form.html('<p class="thankyou">'+thankyou+'</p>');
+  })
+
 });
