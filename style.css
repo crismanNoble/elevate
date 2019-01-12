@@ -2,7 +2,9 @@ html, body {
   margin: 0;
 }
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: 'archivonarrow';
 }
 
@@ -47,7 +49,10 @@ p {
 
 .bg-image {
   background-image: url('./assets/doggo.jpg');
-  background-size: cover;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
   background-position: top left;
   background-repeat: no-repeat;
 
@@ -113,6 +118,8 @@ p {
 .bottom-left-content {
   float: left;
   color: white;
+  width: -webkit-calc(50% - 20px);
+  width: -moz-calc(50% - 20px);
   width: calc(50% - 20px);
 }
 .bottom-left-content p{
@@ -155,8 +162,16 @@ p {
 }
 
 .footer--left {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-end;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+       -moz-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
 
 }
 
@@ -183,7 +198,10 @@ p {
 .middle {
   background-color: #ffdd00;
   background-image: url(./assets/pattern-yellow.png);
-  background-size: auto 100%;
+  -webkit-background-size: auto 100%;
+     -moz-background-size: auto 100%;
+       -o-background-size: auto 100%;
+          background-size: auto 100%;
   padding: 90px 0;
   margin-top: -1px;
     z-index: 10;
@@ -206,34 +224,72 @@ p {
   border: 8px solid white;
 }
 .slide-controller {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 30px;
   z-index: 10;
 }
 
 .slide {
   max-width: 1290px;
+  width: -webkit-calc(100% - 224px);
+  width: -moz-calc(100% - 224px);
   width: calc(100% - 224px);
 }
 .slide-controller img {
   width: 54px;
 }
 .slider {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 
 .footer .content-width {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 
 .footer--right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer--right a {
@@ -259,7 +315,9 @@ p {
 .header span {
   text-decoration: underline;
   font-family: 'estandarrd';
-  text-decoration-color: #ffdd00;;
+  -webkit-text-decoration-color: #ffdd00;
+     -moz-text-decoration-color: #ffdd00;
+          text-decoration-color: #ffdd00;;
 }
 
 .logo-top {
@@ -287,7 +345,11 @@ p {
   left: 0;
 
 }
-
+.hero-wrapper p, .hero-wrapper h1 {
+  position: absolute !important;
+clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+clip: rect(1px, 1px, 1px, 1px);
+}
 
 .overlay {
   width: 100%;
@@ -307,8 +369,12 @@ p {
   overflow: hidden;
   position: relative;
   background-image:url(./assets/palm-final.jpg);
-  background-size: cover;
-  background-position: center center;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 .video-background {
   min-width: 100%;
@@ -325,12 +391,19 @@ p {
   float: left;
   display: block;
   width: 100%;
-  transform:scale(.95);
+  -webkit-transform:scale(.95);
+     -moz-transform:scale(.95);
+      -ms-transform:scale(.95);
+       -o-transform:scale(.95);
+          transform:scale(.95);
 }
 
 .top3 {
   background-image: url(./assets/palms2.jpg);
-  background-size: cover;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -371,44 +444,12 @@ p {
     width: 34px;
   }
   .slide {
+    width: -webkit-calc(100% - 144px);
+    width: -moz-calc(100% - 144px);
     width: calc(100% - 144px);
   }
 }
 @media (max-width: 650px) {
-  .video-background {
-    min-height: 100%;
-    min-width: 100%;
-    margin-left: -39%;
-  }
-  .top:not(.top2) {
-    background-image:url(./assets/palm-final.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  .top.top2 {
-    background-image: url(./assets/palms2.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  .top.top3 {
-    background-image: url(./assets/palms2.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  .video-wrapper {
-    padding-bottom: 0;
-    position: relative;
-    z-index: 0;
-    position: absolute;
-    top:0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    display: none;
-  }
   .overlay {
   display: none;
   }
@@ -416,6 +457,8 @@ p {
     display: block;
   }
   .slide {
+    width: -webkit-calc(100% - 40px);
+    width: -moz-calc(100% - 40px);
     width: calc(100% - 40px);
   }
   .slider {
@@ -474,13 +517,6 @@ iframe {
 
 
 /* for external sheet */
-div#snippet_guest_card {
-  padding: 0;
-}
-
-.snippets-container .new-form#guest_card_form {
-  padding: 0;
-}
 
 /*
 
@@ -488,4 +524,3 @@ yellow #fee139
 dark: #404041;
 
 */
-
