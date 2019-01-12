@@ -8,16 +8,16 @@ html, body {
 
 @font-face {
   font-family: 'archivonarrow';
-  src: url('assets/fonts/ArchivoNarrow-Regular.woff2') format('woff2'),
-         url('assets/fonts/ArchivoNarrow-Regular.woff') format('woff');
+  src: url('./assets/fonts/ArchivoNarrow-Regular.woff2') format('woff2'),
+         url('./assets/fonts/ArchivoNarrow-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'estandarrd';
-  src: url('assets/fonts/estandarrd-regular-webfont.woff2') format('woff2'),
-       url('assets/fonts/estandarrd-regular-webfont.woff') format('woff');
+  src: url('./assets/fonts/estandarrd-regular-webfont.woff2') format('woff2'),
+       url('./assets/fonts/estandarrd-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -276,7 +276,8 @@ p {
   left: 0;
 }
 
-.video-wrapper {
+.video-wrapper,
+.hero-wrapper  {
   padding-bottom: 56.25%;
   width: 100%;
   position: relative;
@@ -284,6 +285,7 @@ p {
   position: absolute;
   top:0;
   left: 0;
+
 }
 
 
@@ -304,6 +306,9 @@ p {
 .top {
   overflow: hidden;
   position: relative;
+  background-image:url(./assets/palm-final.jpg);
+  background-size: cover;
+  background-position: center center;
 }
 .video-background {
   min-width: 100%;
@@ -376,7 +381,7 @@ p {
     margin-left: -39%;
   }
   .top:not(.top2) {
-    background-image: url(./assets/palms1.jpg);
+    background-image:url(./assets/palm-final.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -456,4 +461,31 @@ p {
     display: none;
   }
 }
+
+iframe {
+  min-height: 864px!important;
+}
+
+@media(max-width: 650px) {
+  iframe {
+    min-height: 1000px!important;
+  }
+}
+
+
+/* for external sheet */
+div#snippet_guest_card {
+  padding: 0;
+}
+
+.snippets-container .new-form#guest_card_form {
+  padding: 0;
+}
+
+/*
+
+yellow #fee139
+dark: #404041;
+
+*/
 
